@@ -4,6 +4,8 @@ project(insider-program)
 
 set(PLUGIN_NAME "dcc-insider-plugin")
 
+include(GNUInstallDirs)
+
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
