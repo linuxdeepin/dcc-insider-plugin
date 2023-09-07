@@ -16,7 +16,8 @@ Build-Depends:
  libdtkwidget-dev,
  libdtkgui-dev,
  libappstreamqt-dev,
- libpackagekitqt5-dev
+ libpackagekitqt5-dev,
+ dde-control-center-dev
 Standards-Version: 4.6.0
 Rules-Requires-Root: no
 
