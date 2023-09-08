@@ -25,6 +25,7 @@ Package: dcc-insider-plugin
 Architecture: any
 Depends:
  ${shlibs:Depends},
- ${misc:Depends}
+ ${misc:Depends},
+ packagekit
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
