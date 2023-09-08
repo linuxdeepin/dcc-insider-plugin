@@ -1,3 +1,10 @@
+dcc-insider-plugin (0.0.1) unstable; urgency=medium
+
+  * Initial tag release
+  * Support switching between legacy and new tech preview launcher
+
+ -- Gary Wang <wangzichong@deepin.org>  Fri, 08 Sep 2023 13:16:00 +0800
+
 dcc-insider-plugin (0.0.0) UNRELEASED; urgency=medium
 
   * Initial release
