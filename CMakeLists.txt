@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: CC0-1.0
 
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 3.12)
 
 project(insider-program)
 
@@ -13,14 +13,16 @@ include(GNUInstallDirs)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt5 COMPONENTS Core Widgets LinguistTools REQUIRED)
+find_package(Qt5 COMPONENTS Core Widgets Concurrent LinguistTools REQUIRED)
 find_package(Dtk COMPONENTS Widget REQUIRED)
+find_package(QCoro5 COMPONENTS Core REQUIRED)
 find_package(DdeControlCenter REQUIRED)
 find_package(PackageKitQt5 REQUIRED)
 
 set(SOURCE_FILES
     insidermodule.cpp insidermodule.h
     insiderplugin.cpp insiderplugin.h
+    pkutils.cpp pkutils.h
 )
 
 set(TRANSLATION_FILES
@@ -34,6 +36,7 @@ add_library(${PLUGIN_NAME} SHARED
     ${SOURCE_FILES}
     ${TRANSLATED_FILES}
 )
+set_property(TARGET ${PLUGIN_NAME} PROPERTY CXX_STANDARD 20)
 
 target_include_directories(${PLUGIN_NAME}
 PUBLIC
@@ -42,6 +45,8 @@ PUBLIC
 
 target_link_libraries(${PLUGIN_NAME}
 PRIVATE
+    Qt::Concurrent
+    QCoro::Core
     Dtk::Widget
     ${DdeControlCenter_LIBRARIES}
     PK::packagekitqt5

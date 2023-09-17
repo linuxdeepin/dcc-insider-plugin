@@ -3,6 +3,11 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 #include "insidermodule.h"
+#include "pkutils.h"
+
+#include <algorithm>
+#include <exception>
+#include <tuple>
 
 #include <widgets/settingsgroup.h>
 #include <widgets/itemmodule.h>
@@ -10,11 +15,11 @@
 
 #include <DStandardItem>
 #include <QLabel>
+#include <QProcess>
 #include <QVBoxLayout>
 
 // PackageKit-Qt
 #include <Daemon>
-#include <QProcess>
 
 using namespace DCC_NAMESPACE;
 DWIDGET_USE_NAMESPACE
@@ -87,25 +92,17 @@ void InsiderModule::deactive()
 
 void InsiderModule::installPackage(const QString packageName)
 {
-    PackageKit::Transaction * tx = PackageKit::Daemon::resolve(packageName);
-    connect(tx, &PackageKit::Transaction::package, this,
-            [tx, this](PackageKit::Transaction::Info info, const QString &packageID, const QString &summary){
-                qDebug() << "Package resolved:" << packageID << info << summary;
-                PackageKit::Transaction * nestedTx = PackageKit::Daemon::installPackage(packageID);
-                connect(nestedTx, &PackageKit::Transaction::finished, this,
-                        [this](PackageKit::Transaction::Exit status, uint runtime){
-                            qDebug() << "Package install result:" << status << runtime;
-                            if (status == PackageKit::Transaction::ExitSuccess) {
-                                cleanupLauncherProcess();
-                            }
-                            checkInstalledLauncher();
-                        });
-                connect(nestedTx, &PackageKit::Transaction::errorCode, this,
-                        [this](PackageKit::Transaction::Error error, const QString &details){
-                            qDebug() << "Package install error:" << error << details;
-                            checkInstalledLauncher();
-                        });
-            });
+    PKUtils::resolve(packageName).then([this](const PKUtils::PkPackages packages) {
+        if (packages.isEmpty()) return;
+
+        PKUtils::installPackage(packages.constFirst()).then([this](){
+            cleanupLauncherProcess();
+            checkInstalledLauncher();
+        }, [this](const std::exception & e){
+            PKUtils::PkError::printException(e);
+            checkInstalledLauncher();
+        });
+    });
 }
 
 void InsiderModule::cleanupLauncherProcess()
@@ -119,20 +116,18 @@ void InsiderModule::cleanupLauncherProcess()
 
 void InsiderModule::checkInstalledLauncher()
 {
-    m_launcherSearchResults.clear();
-    PackageKit::Transaction * tx = PackageKit::Daemon::searchNames("launch", PackageKit::Transaction::FilterInstalled);
-    connect(tx, &PackageKit::Transaction::package, this,
-            [tx, this](PackageKit::Transaction::Info info, const QString &packageID, const QString &summary){
-                qDebug() << "Package search result:" << packageID << info << summary;
-                m_launcherSearchResults.append(PackageKit::Daemon::packageName(packageID));
-            });
-    connect(tx, &PackageKit::Transaction::finished, this,
-            [this](PackageKit::Transaction::Exit status, uint runtime){
-                qDebug() << "Search finished." << status << runtime;
-                int availableLauncherCount = m_availableLaunchers->rowCount();
-                for (int i = 0; i < availableLauncherCount; i++) {
-                    QStandardItem * item = m_availableLaunchers->item(i);
-                    item->setCheckState(m_launcherSearchResults.contains(item->data(Dtk::UserRole).toString()) ? Qt::Checked : Qt::Unchecked);
-                }
-            });
+    PKUtils::searchNames("launch", PackageKit::Transaction::FilterInstalled).then([this](const PKUtils::PkPackages packages) {
+        QStringList packageNames;
+        for (const PKUtils::PkPackage & pkg : packages) {
+            QString pkgId;
+            std::tie(std::ignore, pkgId, std::ignore) = pkg;
+            packageNames.append(PackageKit::Daemon::packageName(pkgId));
+        }
+
+        int availableLauncherCount = m_availableLaunchers->rowCount();
+        for (int i = 0; i < availableLauncherCount; i++) {
+            QStandardItem * item = m_availableLaunchers->item(i);
+            item->setCheckState(packageNames.contains(item->data(Dtk::UserRole).toString()) ? Qt::Checked : Qt::Unchecked);
+        }
+    });
 }

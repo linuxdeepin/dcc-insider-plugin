@@ -29,7 +29,6 @@ private:
     void cleanupLauncherProcess();
     void checkInstalledLauncher();
 
-    QStringList m_launcherSearchResults;
     QStandardItemModel * m_availableLaunchers;
     DCC_NAMESPACE::ItemModule * m_launcherList;
 };
