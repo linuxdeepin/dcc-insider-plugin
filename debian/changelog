@@ -1,3 +1,9 @@
+dcc-insider-plugin (0.1.0) unstable; urgency=medium
+
+  * Remove launcher options from tech preview plugin
+
+ -- Gary Wang <wangzichong@deepin.org>  Wed, 27 Dec 2023 11:27:00 +0800
+
 dcc-insider-plugin (0.0.2) unstable; urgency=medium
 
   * Support switch to ddm/treeland tech preview
