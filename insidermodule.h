@@ -25,16 +25,9 @@ protected:
     virtual void deactive() override;
 
 private:
-    void installLauncher(const QString packageName);
-    void cleanupLauncherProcess();
-    void checkInstalledLauncher();
-
     void installDisplayManager(const QString packageName);
     void checkEnabledDisplayManager();
     void switchDisplayManager(bool isNew);
-
-    QStandardItemModel * m_availableLaunchers;
-    DCC_NAMESPACE::ItemModule * m_launcherList;
 
     // Display Manager
     QStandardItemModel * m_availableDm;
