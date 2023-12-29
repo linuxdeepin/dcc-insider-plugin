@@ -28,8 +28,15 @@ private:
     void installDisplayManager(const QString packageName);
     void checkEnabledDisplayManager();
     void switchDisplayManager(bool isNew);
+    void installInputMethod(const QString &packageName);
+    void checkEnabledInputMethod();
+    void switchInputMethod(bool isNew);
 
     // Display Manager
     QStandardItemModel * m_availableDm;
     DCC_NAMESPACE::ItemModule * m_dmList;
+
+    // Input Method
+    QStandardItemModel * m_availableIM;
+    DCC_NAMESPACE::ItemModule * m_imList;
 };
