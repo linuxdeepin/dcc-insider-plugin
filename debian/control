@@ -1,5 +1,5 @@
 Source: dcc-insider-plugin
-Section: unknown
+Section: utils
 Priority: optional
 Maintainer: Gary Wang <wangzichong@deepin.org>
 Build-Depends:
@@ -28,5 +28,6 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  packagekit
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Insider plugin for DDE Control Center
+ DCC Insider Plugin is A tool to toggle between
+ preview and production versions
