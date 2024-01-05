@@ -83,6 +83,9 @@ InsiderModule::InsiderModule(QObject *parent)
 
             connect(imListView, &DListView::clicked, this, [this](const QModelIndex &index) {
                 QStandardItem *checkedItem = m_availableIM->itemFromIndex(index);
+                if (!checkedItem->isEnabled()) {
+                    return;
+                }
                 QString packageName = checkedItem->data(Dtk::UserRole).toString();;
                 installInputMethod(packageName);
             });
