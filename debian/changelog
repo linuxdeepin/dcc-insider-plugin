@@ -1,3 +1,9 @@
+dcc-insider-plugin (0.1.1) unstable; urgency=medium
+
+  * feat: support dim preview
+
+ -- zsien <quezhiyong@deepin.org>  Fri, 05 Jan 2024 15:27:39 +0800
+
 dcc-insider-plugin (0.1.0) unstable; urgency=medium
 
   * Remove launcher options from tech preview plugin
