@@ -51,9 +51,12 @@ InsiderModule::InsiderModule(QObject *parent)
 
             connect(dmListview, &DListView::clicked,
                     this, [this](const QModelIndex &index){
-                        QStandardItem * checkedItem = m_availableDm->itemFromIndex(index);
-                        QString packageName = checkedItem->data(Dtk::UserRole).toString();;
-                        installDisplayManager(packageName);
+                QStandardItem * checkedItem = m_availableDm->itemFromIndex(index);
+                if (Qt::Checked == checkedItem->checkState() || !checkedItem->isEnabled())
+                    return;
+
+                QString packageName = checkedItem->data(Dtk::UserRole).toString();
+                installDisplayManager(packageName);
             });
 
             return dmListview;
@@ -83,9 +86,9 @@ InsiderModule::InsiderModule(QObject *parent)
 
             connect(imListView, &DListView::clicked, this, [this](const QModelIndex &index) {
                 QStandardItem *checkedItem = m_availableIM->itemFromIndex(index);
-                if (!checkedItem->isEnabled()) {
+                if (Qt::Checked == checkedItem->checkState() || !checkedItem->isEnabled())
                     return;
-                }
+
                 QString packageName = checkedItem->data(Dtk::UserRole).toString();;
                 installInputMethod(packageName);
             });
