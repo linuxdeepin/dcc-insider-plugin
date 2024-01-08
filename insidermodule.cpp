@@ -202,13 +202,14 @@ void InsiderModule::checkEnabledDisplayManager()
 void InsiderModule::switchDisplayManager(bool isNew)
 {
     QProcess process;
-    process.setProgram("systemctl");
+    process.setProgram("/usr/bin/pkexec");
     if (isNew) {
         // systemd service named ddm, not treeland
-        process.setArguments(QStringList() << "enable" << "ddm.service" << "-f");
+        process.setArguments(QStringList() << "systemctl" << "enable" << "ddm.service" << "-f");
     } else {
-        process.setArguments(QStringList() << "enable" << "lightdm.service" << "-f");
+        process.setArguments(QStringList() << "systemctl" << "enable" << "lightdm.service" << "-f");
     }
+
     process.start();
     process.waitForFinished();
     qDebug() << "switchDisplayManager: " << process.readAll();
