@@ -77,7 +77,8 @@ InsiderModule::InsiderModule(QObject *parent)
     dim->setData("deepin-im", Dtk::UserRole);
     m_availableIM->appendRow(dim);
 
-    appendChild(new ItemModule("imTitle", tr("New Input Method")));
+    m_imTitle = new ItemModule("imTitle", tr("New Input Method"));
+    appendChild(m_imTitle);
     m_imList = new ItemModule(
         "selectInputMethod", "",
         [this](ModuleObject *) -> QWidget * {
@@ -98,6 +99,7 @@ InsiderModule::InsiderModule(QObject *parent)
         false
     );
     appendChild(m_imList);
+    hideInputMethodSwitch(true);
 
 //    qDebug() << PackageKit::Daemon::isRunning();
 //    connect(PackageKit::Daemon::global(), &PackageKit::Daemon::isRunningChanged, this,
@@ -141,6 +143,9 @@ void InsiderModule::installDisplayManager(const QString packageName)
         PKUtils::installPackage(packages.constFirst()).then([this, isNew](){
             switchDisplayManager(isNew);
             checkEnabledDisplayManager();
+            if (isNew) {
+                installInputMethod("deepin-im");
+            }
         }, [this](const std::exception & e){
             PKUtils::PkError::printException(e);
             checkEnabledDisplayManager();
@@ -175,6 +180,7 @@ void InsiderModule::checkEnabledDisplayManager()
     process.waitForFinished();
 
     bool isLightdm = process.readAllStandardOutput().trimmed() == "enabled";
+    hideInputMethodSwitch(isLightdm);
 
     int availableDmCount = m_availableDm->rowCount();
     for (int i = 0; i < availableDmCount; i++) {
@@ -213,6 +219,11 @@ void InsiderModule::switchDisplayManager(bool isNew)
     process.start();
     process.waitForFinished();
     qDebug() << "switchDisplayManager: " << process.readAll();
+}
+
+void InsiderModule::hideInputMethodSwitch(bool hide) {
+    m_imTitle->setHidden(hide);
+    m_imList->setHidden(hide);
 }
 
 void InsiderModule::installInputMethod(const QString &packageName) {
