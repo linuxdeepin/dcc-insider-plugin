@@ -1,3 +1,11 @@
+dcc-insider-plugin (0.1.2) unstable; urgency=medium
+
+  * Fix options can be selected when disabled
+  * Reduce the times of polkit pop-ups
+  * Do nothing if clicked item was checked
+
+ -- zsien <quezhiyong@deepin.org>  Thu, 11 Jan 2024 10:30:17 +0800
+
 dcc-insider-plugin (0.1.1) unstable; urgency=medium
 
   * feat: support dim preview
