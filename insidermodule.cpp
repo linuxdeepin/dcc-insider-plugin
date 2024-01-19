@@ -156,7 +156,7 @@ void InsiderModule::installDisplayManager(const QString packageName)
 static bool imConfigIsDim() {
     auto home = QDir::home();
     QFile file(home.filePath(".xinputrc"));
-   
+
     if (file.exists() && file.open(QFile::ReadOnly)) {
         QTextStream in (&file);
         QString line;
@@ -179,30 +179,17 @@ void InsiderModule::checkEnabledDisplayManager()
     process.start();
     process.waitForFinished();
 
-    bool isLightdm = process.readAllStandardOutput().trimmed() == "enabled";
-    hideInputMethodSwitch(isLightdm);
+    m_isLightdm = process.readAllStandardOutput().trimmed() == "enabled";
 
     int availableDmCount = m_availableDm->rowCount();
     for (int i = 0; i < availableDmCount; i++) {
         QStandardItem * item = m_availableDm->item(i);
-        bool isChecked = isLightdm == (item->data(Dtk::UserRole).toString()=="lightdm");
+        bool isChecked = m_isLightdm == (item->data(Dtk::UserRole).toString()=="lightdm");
         item->setCheckState(isChecked ? Qt::Checked : Qt::Unchecked);
     }
 
-    if (isLightdm) {
-        if (imConfigIsDim()) {
-            switchInputMethod(false);
-            checkEnabledInputMethod();
-        }
-    }
-
-    int availableIMCount = m_availableIM->rowCount();
-    for (int i = 0; i < availableIMCount; i++) {
-        QStandardItem *item = m_availableIM->item(i);
-        if (item->data(Dtk::UserRole).toString() == "deepin-im") {
-            item->setEnabled(!isLightdm);
-        }
-    }
+    switchInputMethod(!m_isLightdm);
+    checkEnabledInputMethod();
 }
 
 void InsiderModule::switchDisplayManager(bool isNew)
@@ -252,6 +239,8 @@ void InsiderModule::checkEnabledInputMethod() {
         bool isChecked = isDim == (item->data(Dtk::UserRole).toString() == "deepin-im");
         item->setCheckState(isChecked ? Qt::Checked : Qt::Unchecked);
     }
+
+    hideInputMethodSwitch(m_isLightdm);
 }
 
 void InsiderModule::switchInputMethod(bool isNew) {

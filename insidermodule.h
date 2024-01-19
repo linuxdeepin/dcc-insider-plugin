@@ -41,4 +41,5 @@ private:
     DCC_NAMESPACE::ItemModule * m_imTitle;
     QStandardItemModel * m_availableIM;
     DCC_NAMESPACE::ItemModule * m_imList;
+    bool m_isLightdm = false;
 };
