@@ -188,8 +188,8 @@ void InsiderModule::checkEnabledDisplayManager()
         item->setCheckState(isChecked ? Qt::Checked : Qt::Unchecked);
     }
 
+    hideInputMethodSwitch(m_isLightdm || !imConfigIsDim());
     switchInputMethod(!m_isLightdm);
-    checkEnabledInputMethod();
 }
 
 void InsiderModule::switchDisplayManager(bool isNew)
