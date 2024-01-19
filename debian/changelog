@@ -1,3 +1,9 @@
+dcc-insider-plugin (0.1.3) unstable; urgency=medium
+
+  * fix: there is a delay when switch to deepin im
+
+ -- dengbo <dengbo@deepin.org>  Fri, 19 Jan 2024 11:31:22 +0800
+
 dcc-insider-plugin (0.1.2) unstable; urgency=medium
 
   * Fix options can be selected when disabled
