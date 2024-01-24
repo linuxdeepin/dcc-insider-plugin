@@ -32,6 +32,7 @@ private:
     void installInputMethod(const QString &packageName);
     void checkEnabledInputMethod();
     void switchInputMethod(bool isNew);
+    void installDDEShell();
 
     // Display Manager
     QStandardItemModel * m_availableDm;

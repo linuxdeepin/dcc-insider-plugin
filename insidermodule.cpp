@@ -145,6 +145,7 @@ void InsiderModule::installDisplayManager(const QString packageName)
             checkEnabledDisplayManager();
             if (isNew) {
                 installInputMethod("deepin-im");
+                installDDEShell();
             }
         }, [this](const std::exception & e){
             PKUtils::PkError::printException(e);
@@ -226,6 +227,18 @@ void InsiderModule::installInputMethod(const QString &packageName) {
         }, [this](const std::exception & e) {
             PKUtils::PkError::printException(e);
             checkEnabledInputMethod();
+        });
+    });
+}
+
+void InsiderModule::installDDEShell() {
+    PKUtils::resolve("dde-shell").then([this](const PKUtils::PkPackages packages) {
+        if (packages.isEmpty()) return;
+
+        PKUtils::installPackage(packages.constFirst()).then([this](){
+        }, [this](const std::exception & e){
+            PKUtils::PkError::printException(e);
+            checkEnabledDisplayManager();
         });
     });
 }
