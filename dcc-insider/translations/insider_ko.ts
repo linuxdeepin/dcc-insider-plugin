@@ -2,40 +2,36 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
-    <name>InsiderModule</name>
+    <name>insider</name>
     <message>
-        <location filename="../dcc-insider-plugin/insidermodule.cpp" line="30"/>
         <source>Technology Preview</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>main</name>
     <message>
-        <location filename="../dcc-insider-plugin/insidermodule.cpp" line="37"/>
-        <source>Currently stable Display Manager (lightdm)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dcc-insider-plugin/insidermodule.cpp" line="41"/>
-        <source>Technology preview Display Manager/Window Manager (ddm/treeland)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dcc-insider-plugin/insidermodule.cpp" line="45"/>
         <source>New Display Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dcc-insider-plugin/insidermodule.cpp" line="72"/>
+        <source>Currently stable Display Manager (lightdm)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Technology preview Display Manager/Window Manager (ddm/treeland)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Input Method</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Currently stable Input Method</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dcc-insider-plugin/insidermodule.cpp" line="76"/>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dcc-insider-plugin/insidermodule.cpp" line="80"/>
-        <source>New Input Method</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -18,6 +18,8 @@ Build-Depends:
  libappstreamqt-dev,
  libpackagekitqt5-dev,
  qcoro-qt5-dev,
+ qt6-base-dev,
+ qt6-tools-dev,
  dde-control-center-dev
 Standards-Version: 4.6.0
 Rules-Requires-Root: no
