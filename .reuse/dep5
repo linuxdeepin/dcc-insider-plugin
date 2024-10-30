@@ -19,13 +19,16 @@ Copyright: UnionTech Software Technology Co., Ltd.
 License: CC-BY-4.0
 
 # translations
-Files: translations/*.ts
+Files: translations/*.ts *.ts
 Copyright: UnionTech Software Technology Co., Ltd.
 License: GPL-3.0-or-later
 
 # Qt plugin manifests (json for dcc-insider-plugin)
-Files: insider.json
+Files: insider.json *.json
 Copyright: None
 License: CC0-1.0
 
-
+# png svg
+Files: *.svg *.png *.dci *.gif
+Copyright: UnionTech Software Technology Co., Ltd.
+License: CC0-1.0

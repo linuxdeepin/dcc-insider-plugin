@@ -163,7 +163,7 @@ static bool imConfigIsDim() {
         QString line;
         do {
             line = in.readLine();
-            if (!line.contains("run_im dim")) {
+            if (line.contains("run_im dim")) {
                 return true;
             }
         } while (!line.isNull());
