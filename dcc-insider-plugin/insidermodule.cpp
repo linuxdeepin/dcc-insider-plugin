@@ -138,19 +138,29 @@ void InsiderModule::installDisplayManager(const QString packageName)
     bool isNew = packageName == "treeland";
 
     PKUtils::resolve(packageName).then([this, isNew](const PKUtils::PkPackages packages) {
-        if (packages.isEmpty()) return;
+        if (packages.isEmpty())
+            return;
 
-        PKUtils::installPackage(packages.constFirst()).then([this, isNew](){
-            switchDisplayManager(isNew);
-            checkEnabledDisplayManager();
-            if (isNew) {
-                installInputMethod("deepin-im");
-                installDDEShell();
-            }
-        }, [this](const std::exception & e){
-            PKUtils::PkError::printException(e);
-            checkEnabledDisplayManager();
-        });
+        PKUtils::installPackage(packages.constFirst())
+                .then(
+                        [this, isNew]() {
+                            if (isNew) {
+                                PKUtils::resolve("ddm").then([this, isNew](const PKUtils::PkPackages ddmPackages) {
+                                    if (ddmPackages.isEmpty())
+                                        return;
+
+                                    PKUtils::installPackage(ddmPackages.constFirst()).then([this, isNew]() {
+                                        enabledDisplayManager(isNew);
+                                    });
+                                });
+                            } else {
+                                enabledDisplayManager(isNew);
+                            }
+                        },
+                        [this](const std::exception &e) {
+                            PKUtils::PkError::printException(e);
+                            checkEnabledDisplayManager();
+                        });
     });
 }
 
@@ -241,6 +251,16 @@ void InsiderModule::installDDEShell() {
             checkEnabledDisplayManager();
         });
     });
+}
+
+void InsiderModule::enabledDisplayManager(bool isNew)
+{
+    switchDisplayManager(isNew);
+    checkEnabledDisplayManager();
+    if (isNew) {
+        installInputMethod("deepin-im");
+        installDDEShell();
+    }
 }
 
 void InsiderModule::checkEnabledInputMethod() {

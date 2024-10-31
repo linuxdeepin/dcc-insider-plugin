@@ -38,13 +38,10 @@ void InsiderWorker::setDisplayManager(const QString &id)
         return;
     }
     bool isNew = id == "treeland";
-    m_pkProxy->resolve(id);
-    qDebug() << "set DisplayManager" << id << m_pkProxy->packageID() << "error:" << m_pkProxy->error();
-    if (m_pkProxy->packageID().isEmpty()) {
+    if (isNew && !installPackage("ddm")) {
         return;
     }
-    m_pkProxy->installPackage(m_pkProxy->packageID());
-    if (m_pkProxy->error() != 0) {
+    if (!installPackage(id)) {
         return;
     }
     switchDisplayManager(isNew);
@@ -61,14 +58,7 @@ void InsiderWorker::setInputMethod(const QString &id)
         return;
     }
     bool isNew = id == "deepin-im";
-    m_pkProxy->resolve(id);
-    qDebug() << "set InputMethod"  << id << m_pkProxy->packageID() << m_pkProxy->error();
-    if (m_pkProxy->packageID().isEmpty()) {
-        return;
-    }
-    m_pkProxy->installPackage(m_pkProxy->packageID());
-    if (m_pkProxy->error() != 0) {
-        checkEnabledInputMethod();
+    if (!installPackage(id)) {
         return;
     }
     switchInputMethod(isNew);
@@ -154,16 +144,22 @@ void InsiderWorker::switchDisplayManager(bool isNew)
 
 void InsiderWorker::installDDEShell()
 {
-    m_pkProxy->resolve("dde-shell");
-    qDebug()<< "install dde-shell" << m_pkProxy->packageID() << m_pkProxy->error();
+    if (installPackage("dde-shell")) {
+        checkEnabledDisplayManager();
+    }
+}
+
+bool InsiderWorker::installPackage(const QString &package)
+{
+    m_pkProxy->resolve(package);
     if (m_pkProxy->packageID().isEmpty()) {
-        return;
+        return false;
     }
     m_pkProxy->installPackage(m_pkProxy->packageID());
     if (m_pkProxy->error() != 0) {
-        return;
+        return false;
     }
-    checkEnabledDisplayManager();
+    return true;
 }
 
 void InsiderWorker::switchInputMethod(bool isNew)

@@ -33,6 +33,7 @@ private:
     void checkEnabledInputMethod();
     void switchInputMethod(bool isNew);
     void installDDEShell();
+    void enabledDisplayManager(bool isNew);
 
     // Display Manager
     QStandardItemModel * m_availableDm;

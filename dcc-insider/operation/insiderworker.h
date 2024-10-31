@@ -38,6 +38,7 @@ protected Q_SLOTS:
     void switchDisplayManager(bool isNew);
     void switchInputMethod(bool isNew);
     void installDDEShell();
+    bool installPackage(const QString &package);
 
 private:
     QString m_displayManager;
