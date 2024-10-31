@@ -9,6 +9,7 @@
 namespace dde {
 namespace insider {
 class InsiderWorker;
+
 class DccInsider : public QObject
 {
     Q_OBJECT
