@@ -63,14 +63,14 @@ DccTitleObject {
         name: "imTitle"
         parentName: "insider"
         weight: 30
-        visible: dccData.currentItems.includes("treeland")
+        visible: false
         displayName: qsTr("New Input Method")
     }
     DccObject {
         name: "selectInputMethod"
         parentName: "insider"
         weight: 40
-        visible: dccData.currentItems.includes("treeland")
+        visible: false
         pageType: DccObject.Item
         page: DccGroupView {}
         DccObject {
