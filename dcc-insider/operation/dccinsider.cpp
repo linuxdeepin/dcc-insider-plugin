@@ -13,9 +13,8 @@ DccInsider::DccInsider(QObject *parent)
     : QObject(parent)
     , m_insider(new InsiderWorker(this))
 {
-    m_currentItems.append({ m_insider->displayManager(), m_insider->inputMethod() });
+    m_currentItems.append({ m_insider->displayManager() });
     connect(m_insider, &InsiderWorker::displayManagerChanged, this, &DccInsider::updateCurrentItem);
-    connect(m_insider, &InsiderWorker::inputMethodChanged, this, &DccInsider::updateCurrentItem);
 }
 
 DccInsider::~DccInsider() { }
@@ -29,8 +28,6 @@ void DccInsider::setCurrentItem(const QString &item)
 {
     if (item == "lightdm" || item == "treeland") {
         m_insider->setDisplayManager(item);
-    } else if (item == "fcitx5" || item == "deepin-im") {
-        m_insider->setInputMethod(item);
     }
 }
 
@@ -42,12 +39,6 @@ void DccInsider::updateCurrentItem(const QString &item)
     } else if (item == "treeland") {
         m_currentItems.removeOne("lightdm");
         m_currentItems.append("treeland");
-    } else if (item == "fcitx5") {
-        m_currentItems.removeOne("deepin-im");
-        m_currentItems.append("fcitx5");
-    } else if (item == "deepin-im") {
-        m_currentItems.removeOne("fcitx5");
-        m_currentItems.append("deepin-im");
     }
     Q_EMIT currentItemsChanged(m_currentItems);
 }
