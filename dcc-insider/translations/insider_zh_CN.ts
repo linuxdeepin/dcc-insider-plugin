@@ -2,6 +2,25 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN">
 <context>
+    <name>dde::insider::InsiderWorker</name>
+    <message>
+        <source>Display manager switch successful</source>
+        <translation>显示管理器切换成功</translation>
+    </message>
+    <message>
+        <source>Display manager switch successful, changes will take effect after a restart.</source>
+        <translation>显示管理器切换成功，重启后生效。</translation>
+    </message>
+    <message>
+        <source>Restart Now</source>
+        <translation>立即重启</translation>
+    </message>
+    <message>
+        <source>Restart Later</source>
+        <translation>稍后重启</translation>
+    </message>
+</context>
+<context>
     <name>insider</name>
     <message>
         <source>Technology Preview</source>
@@ -9,7 +28,7 @@
     </message>
 </context>
 <context>
-    <name>main</name>
+    <name>insiderMain</name>
     <message>
         <source>New Display Manager</source>
         <translation>新版显示管理器</translation>
@@ -21,6 +40,10 @@
     <message>
         <source>Technology preview Display Manager/Window Manager (ddm/treeland)</source>
         <translation>技术预览版显示管理器/窗口管理器(ddm/treeland)</translation>
+    </message>
+    <message>
+        <source>The Treeland environment is for user experience purposes only, and there may be quality issues.</source>
+        <translation>Treeland环境为尝鲜体验版，质量尚不稳定，适合热探索和抢先体验产品新变化的用户。</translation>
     </message>
     <message>
         <source>New Input Method</source>
