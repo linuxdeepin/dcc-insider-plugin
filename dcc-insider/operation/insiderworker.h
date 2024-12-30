@@ -33,7 +33,11 @@ protected Q_SLOTS:
     void switchDisplayManager(bool isNew);
 
 private:
+    void notifyDisplayManagerChanged();
+
+private:
     QString m_displayManager;
+    bool m_notifyDisplayManagerChangedFlag;
 };
 } // namespace insider
 } // namespace dde

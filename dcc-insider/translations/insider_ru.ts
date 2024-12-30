@@ -2,6 +2,25 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
+    <name>dde::insider::InsiderWorker</name>
+    <message>
+        <source>Display manager switch successful</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display manager switch successful, changes will take effect after a restart.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Restart Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Restart Later</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>insider</name>
     <message>
         <source>Technology Preview</source>
@@ -9,7 +28,7 @@
     </message>
 </context>
 <context>
-    <name>main</name>
+    <name>insiderMain</name>
     <message>
         <source>New Display Manager</source>
         <translation type="unfinished"></translation>
@@ -20,6 +39,10 @@
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (ddm/treeland)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The Treeland environment is for user experience purposes only, and there may be quality issues.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

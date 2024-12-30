@@ -18,15 +18,41 @@ DccTitleObject {
         id: itemPage
         ItemDelegate {
             Layout.fillWidth: true
-            text: dccObj.displayName
+            height: 100
             hoverEnabled: true
             checkable: false
             checked: true
             cascadeSelected: true
             backgroundVisible: false
-            content: DccCheckIcon {
-                visible: dccData.currentItems.includes(dccObj.name)
+            contentFlow: true
+            content: RowLayout {
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                ColumnLayout {
+                    Layout.leftMargin: dccObj.icon.length === 0 ? 0 : 8
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignVCenter
+                    spacing: 10
+                    DccLabel {
+                        Layout.fillWidth: true
+                        text: dccObj.displayName
+                    }
+                    DccLabel {
+                        Layout.fillWidth: true
+                        visible: text !== ""
+                        font: D.DTK.fontManager.t8
+                        text: dccObj.description
+                        opacity: 0.5
+                    }
+                }
+                DccCheckIcon {
+                    Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                    Layout.topMargin: 5
+                    Layout.bottomMargin: 5
+                    visible: dccData.currentItems.includes(dccObj.name)
+                }
             }
+            
             background: DccItemBackground {
                 separatorVisible: false
             }
@@ -55,6 +81,7 @@ DccTitleObject {
             parentName: "selectDisplayManager"
             weight: 20
             displayName: qsTr("Technology preview Display Manager/Window Manager (ddm/treeland)")
+            description: qsTr("The Treeland environment is for user experience purposes only, and there may be quality issues.")
             pageType: DccObject.Item
             page: itemPage
         }
