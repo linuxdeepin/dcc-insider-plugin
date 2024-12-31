@@ -1,3 +1,11 @@
+dcc-insider-plugin (0.1.7) unstable; urgency=medium
+
+  * fix: Adapt to the UI style of the control center
+  * feat: Add display manager switch notification
+  * fix: Switching unresponsive in technical preview
+
+ -- caixiangrong <caixiangrong@uniontech.com>  Tue, 31 Dec 2024 16:06:20 +0800
+
 dcc-insider-plugin (0.1.6) unstable; urgency=medium
 
   * release 0.1.6
