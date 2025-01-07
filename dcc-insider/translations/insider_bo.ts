@@ -34,14 +34,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Currently stable Display Manager (lightdm)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Technology preview Display Manager/Window Manager (ddm/treeland)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>The Treeland environment is for user experience purposes only, and there may be quality issues.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -55,6 +47,14 @@
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Currently stable Display Manager (LightDM)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

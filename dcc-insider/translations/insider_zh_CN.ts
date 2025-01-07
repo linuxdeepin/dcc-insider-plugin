@@ -34,14 +34,6 @@
         <translation>新版显示管理器</translation>
     </message>
     <message>
-        <source>Currently stable Display Manager (lightdm)</source>
-        <translation>当前稳定版显示管理器（lightdm）</translation>
-    </message>
-    <message>
-        <source>Technology preview Display Manager/Window Manager (ddm/treeland)</source>
-        <translation>技术预览版显示管理器/窗口管理器(ddm/treeland)</translation>
-    </message>
-    <message>
         <source>The Treeland environment is for user experience purposes only, and there may be quality issues.</source>
         <translation>Treeland环境为尝鲜体验版，质量尚不稳定，适合热探索和抢先体验产品新变化的用户。</translation>
     </message>
@@ -56,6 +48,14 @@
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
         <translation>技术预览版输入法（deepin-im）</translation>
+    </message>
+    <message>
+        <source>Currently stable Display Manager (LightDM)</source>
+        <translation>当前稳定版显示管理器（LightDM）</translation>
+    </message>
+    <message>
+        <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
+        <translation>技术预览版显示管理器/窗口管理器(DDM/Treeland)</translation>
     </message>
 </context>
 </TS>
