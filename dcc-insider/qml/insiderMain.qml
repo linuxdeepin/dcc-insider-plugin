@@ -19,13 +19,13 @@ DccTitleObject {
             name: "lightdm"
             parentName: "selectDisplayManager"
             weight: 10
-            displayName: qsTr("Currently stable Display Manager (lightdm)")
+            displayName: qsTr("Currently stable Display Manager (LightDM)")
         }
         ViewItem {
             name: "treeland"
             parentName: "selectDisplayManager"
             weight: 20
-            displayName: qsTr("Technology preview Display Manager/Window Manager (ddm/treeland)")
+            displayName: qsTr("Technology preview Display Manager/Window Manager (DDM/Treeland)")
             description: qsTr("The Treeland environment is for user experience purposes only, and there may be quality issues.")
         }
     }
