@@ -34,10 +34,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The Treeland environment is for user experience purposes only, and there may be quality issues.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>New Input Method</source>
         <translation type="unfinished"></translation>
     </message>
@@ -55,6 +51,10 @@
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
