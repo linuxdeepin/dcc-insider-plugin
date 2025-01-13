@@ -26,7 +26,7 @@ DccTitleObject {
             parentName: "selectDisplayManager"
             weight: 20
             displayName: qsTr("Technology preview Display Manager/Window Manager (DDM/Treeland)")
-            description: qsTr("The Treeland environment is for user experience purposes only, and there may be quality issues.")
+            description: qsTr("When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.")
         }
     }
     DccTitleObject {
