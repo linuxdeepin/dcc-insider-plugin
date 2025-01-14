@@ -1,3 +1,9 @@
+dcc-insider-plugin (0.1.10) unstable; urgency=medium
+
+  * fix: Not displayed when live system
+
+ -- caixiangrong <caixiangrong@uniontech.com>  Tue, 14 Jan 2025 16:36:20 +0800
+
 dcc-insider-plugin (0.1.9) unstable; urgency=medium
 
   * chore: Update Treeland VM usage and Wine support notice
