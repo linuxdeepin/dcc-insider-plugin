@@ -7,6 +7,8 @@
 #include "dde-control-center/dccfactory.h"
 #include "insiderworker.h"
 
+#include <QFile>
+
 namespace dde {
 namespace insider {
 DccInsider::DccInsider(QObject *parent)
@@ -22,6 +24,15 @@ DccInsider::~DccInsider() { }
 QStringList DccInsider::currentItems() const
 {
     return m_currentItems;
+}
+
+bool DccInsider::isLive() const
+{
+    QFile file("/proc/cmdline");
+    if (file.open(QFile::ReadOnly)) {
+        return file.readAll().contains(" boot=live ");
+    }
+    return false;
 }
 
 void DccInsider::setCurrentItem(const QString &item)

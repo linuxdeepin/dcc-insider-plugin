@@ -56,4 +56,7 @@ DccTitleObject {
             displayName: qsTr("Technology preview Input Method (deepin-im)")
         }
     }
+    Component.onCompleted: {
+        dccModule.visible = !dccData.isLive()
+    }
 }

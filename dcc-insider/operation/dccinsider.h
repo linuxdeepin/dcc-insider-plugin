@@ -22,6 +22,7 @@ public:
 
 public Q_SLOTS:
     void setCurrentItem(const QString &item);
+    bool isLive() const;
 
 Q_SIGNALS:
     void currentItemsChanged(const QStringList &currentItems);
