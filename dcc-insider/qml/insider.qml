@@ -8,5 +8,5 @@ DccObject {
     displayName: qsTr("Technology Preview")
     icon: "dcc_insider"
     description: displayName
-    weight: 30
+    weight: 990
 }
