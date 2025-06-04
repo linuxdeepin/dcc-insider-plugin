@@ -11,6 +11,5 @@ include(GNUInstallDirs)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-add_subdirectory("dcc-insider-plugin")
 add_subdirectory("dcc-insider")
 
