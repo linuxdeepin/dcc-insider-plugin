@@ -1,4 +1,10 @@
-dcc-insider-plugin (0.1.12) unstable; urgency=medium
+dcc-insider-plugin (0.1.13) unstable; urgency=medium
+
+  * chore: Remove old dcc-insider-plugin subdirectory from CMakeLists.txt
+
+ -- Robertkill <lvpeilong@uniontech.com>  Wed, 04 Jun 2025 13:31:40 +0800
+
+ dcc-insider-plugin (0.1.12) unstable; urgency=medium
 
   * fix: Wrong technology preview icon
 
