@@ -6,18 +6,7 @@ Build-Depends:
  debhelper-compat (= 13),
  cmake,
  pkg-config,
- qtbase5-dev,
- qttools5-dev,
- qttools5-dev-tools,
- libdtkcommon-dev,
- libdtkcore-dev,
-# v-- provides qdbusxml2cpp-fix binary
- libdtkcore5-bin,
- libdtkwidget-dev,
- libdtkgui-dev,
  libappstreamqt-dev,
- libpackagekitqt5-dev,
- qcoro-qt5-dev,
  qt6-base-dev,
  qt6-tools-dev,
  dde-control-center-dev
