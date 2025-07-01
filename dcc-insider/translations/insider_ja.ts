@@ -53,7 +53,7 @@
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation type="unfinished"/>
+        <translation>Treeland環境を仮想マシンで使用する場合、3Dアクセラレーションが有効になっていることをご確認ください。現在Treeland環境はWineアプリケーションの実行に対応していません。ご注意ください。</translation>
     </message>
 </context>
 </TS>
