@@ -49,11 +49,11 @@
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation>Nowy poglądowy menedżer okien/wyświetlania (DDM/Treeland)</translation>
+        <translation>Nowy poglądowy menedżer okien/logowania (DDM/Treeland)</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation type="unfinished"/>
+        <translation>Korzystając z maszyny wirtualnej, konieczne jest włączenie akceleracji 3D. Środowisko Treeland nie wspiera jeszcze uruchamiania aplikacji Wine.</translation>
     </message>
 </context>
 </TS>
