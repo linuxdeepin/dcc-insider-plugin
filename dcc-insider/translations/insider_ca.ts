@@ -7,7 +7,7 @@
     </message>
     <message>
         <source>Display manager switch successful, changes will take effect after a restart.</source>
-        <translation>El canvi al gestor de pantalla s&apos;ha fet correctament. Els canvis tindran efecte després de reiniciar.</translation>
+        <translation>El canvi de gestor de pantalla s&apos;ha fet correctament. Els canvis tindran efecte després de reiniciar.</translation>
     </message>
     <message>
         <source>Restart Now</source>
@@ -29,7 +29,7 @@
     <name>insiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation>Gestor de visualització nou</translation>
+        <translation>Gestor de pantalla nou</translation>
     </message>
     <message>
         <source>New Input Method</source>
@@ -45,11 +45,11 @@
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation>Gestor de visualització actualment estable (LightDM)</translation>
+        <translation>Gestor de pantalla actualment estable (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation>Vista prèvia de tecnologia del gestor de visualització / gestor de finestres (DDM/Treeland)</translation>
+        <translation>Vista prèvia de tecnologia del gestor de pantalla / gestor de finestres (DDM/Treeland)</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
