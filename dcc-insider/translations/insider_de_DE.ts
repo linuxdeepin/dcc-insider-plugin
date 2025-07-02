@@ -1,59 +1,59 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="pl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="de_DE">
 <context>
     <name>dde::insider::InsiderWorker</name>
     <message>
         <source>Display manager switch successful</source>
-        <translation>Pomyślnie zmieniono menedżera okien</translation>
+        <translation>Wechsel des Display-Managers erfolgreich</translation>
     </message>
     <message>
         <source>Display manager switch successful, changes will take effect after a restart.</source>
-        <translation>Pomyślnie zmieniono menedżera okien, zmiany zastosują się po restarcie komputera.</translation>
+        <translation>Wechsel des Display-Managers erfolgreich, Änderungen werden nach einem Neustart wirksam</translation>
     </message>
     <message>
         <source>Restart Now</source>
-        <translation>Uruchom ponownie teraz</translation>
+        <translation>Jetzt Neustarten</translation>
     </message>
     <message>
         <source>Restart Later</source>
-        <translation>Uruchom ponownie później</translation>
+        <translation>Später Neustarten</translation>
     </message>
 </context>
 <context>
     <name>insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation>Podgląd technologii</translation>
+        <translation>Technologie-Vorschau</translation>
     </message>
 </context>
 <context>
     <name>insiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation>Nowy menedżer okien</translation>
+        <translation>Neuer Display-Manager</translation>
     </message>
     <message>
         <source>New Input Method</source>
-        <translation>Nowa metoda wprowadzania</translation>
+        <translation>Neue Eingabemethode</translation>
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation>Aktualna stabilna metoda wprowadzania</translation>
+        <translation>Aktuell stabile Eingabemethode</translation>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation>Nowa poglądowa metoda wprowadzania (deepin-im)</translation>
+        <translation>Technologievorschau-Eingabemethode (deepin-im)</translation>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation>Aktualnie stabilny menedżer okien (LightDM)</translation>
+        <translation>Aktuell stabiler Display-Manager (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation>Nowy poglądowy menedżer okien/logowania (DDM/Treeland)</translation>
+        <translation>Technologievorschau-Display-/ Fenster-Manager (DDM/Treeland)</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation>Korzystając z maszyny wirtualnej, konieczne jest włączenie akceleracji 3D. Środowisko Treeland nie wspiera jeszcze uruchamiania aplikacji Wine.</translation>
+        <translation>Wenn Sie die Treeland-Umgebung in einer Virtuellen Maschine betreiben, stellen Sie bitte sicher, dass 3D-Beschleunigung aktiviert ist. Bitte beachten Sie, dass die aktuelle Treeland-Umgebung keine Wine-Applikationen unterstützt.</translation>
     </message>
 </context>
 </TS>
