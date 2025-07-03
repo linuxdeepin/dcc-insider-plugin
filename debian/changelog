@@ -1,3 +1,14 @@
+dcc-insider-plugin (0.1.15) unstable; urgency=medium
+
+  * refactor: optimize build system security flags
+  * i18n: Updates for project Deepin Desktop Environment (#39)
+  * i18n: Updates for project Deepin Desktop Environment (#38)
+  * chore: add CI configuration for dcc-insider-plugin
+  * chore(i18n): add zh_HK and zh_TW translations
+  * chore: remove dcc-insider-plugin and related dependencies
+
+ -- WuJiangYu <wujiangyu@uniontech.com>  Thu, 03 Jul 2025 19:52:12 +0800
+
 dcc-insider-plugin (0.1.14) unstable; urgency=medium
 
   * fix: update binary dci file
