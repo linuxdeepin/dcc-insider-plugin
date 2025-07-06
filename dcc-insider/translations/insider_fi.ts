@@ -22,7 +22,7 @@
     <name>insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation>Tekniikan esikatselu</translation>
+        <translation>Tekniikan esittely</translation>
     </message>
 </context>
 <context>
@@ -41,19 +41,19 @@
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation type="unfinished"/>
+        <translation>Tekniikan esittely, kirjoitustapa (deepin-im)</translation>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation type="unfinished"/>
+        <translation>Nykyinen vakaa näytönhallinta (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation type="unfinished"/>
+        <translation>Tekniikan esittely näyttöhallinta/Ikkunahallinta (DDM/Treeland)</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation type="unfinished"/>
+        <translation>Kun kokeilet Treelandia virtuaalikoneessa, varmista, että 3D-kiihdytys on käytössä. Huomaa, että nykyinen Treeland ei vielä tue Wine-sovelluksia.</translation>
     </message>
 </context>
 </TS>
