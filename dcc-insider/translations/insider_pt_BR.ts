@@ -45,11 +45,11 @@
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation> Gerenciador de Janelas atualmente estável (LightDM)</translation>
+        <translation>Gerenciador de exibição estável (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation>Visualização da tecnologia Gerenciador de Exibição/Gerenciador de Janelas (DDM/Treeland)</translation>
+        <translation>Gerenciador de exibição / Gerenciador de janelas experimental (DDM / Treeland)</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
