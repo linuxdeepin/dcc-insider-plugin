@@ -22,7 +22,7 @@
     <name>insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation>Prévia da tecnologia</translation>
+        <translation>Recursos experimentais</translation>
     </message>
 </context>
 <context>
@@ -41,7 +41,7 @@
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation>Método de entrada de pré-visualização de tecnologia (deepin-im)</translation>
+        <translation>Método de entrada experimental (deepin-im)</translation>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
