@@ -45,15 +45,15 @@
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation type="unfinished"/>
+        <translation>Текущий стабильный оконный менеджер (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation type="unfinished"/>
+        <translation>Предварительный обзор нового оконного менеджера (DDM/Treeland)</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation type="unfinished"/>
+        <translation>При использовании Treeland в виртуальной машине убедитесь, что 3D ускорение включено. Имейте в виду, что Treeland пока не поддерживает Wine.</translation>
     </message>
 </context>
 </TS>
