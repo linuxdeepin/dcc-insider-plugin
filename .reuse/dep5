@@ -19,7 +19,7 @@ Copyright: UnionTech Software Technology Co., Ltd.
 License: CC-BY-4.0
 
 # translations
-Files: translations/*.ts *.ts
+Files: translations/*.ts *.ts .tx/transifex.yaml
 Copyright: UnionTech Software Technology Co., Ltd.
 License: GPL-3.0-or-later
 
