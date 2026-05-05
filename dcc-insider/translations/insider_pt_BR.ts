@@ -3,11 +3,11 @@
     <name>dde::insider::InsiderWorker</name>
     <message>
         <source>Display manager switch successful</source>
-        <translation>A troca do gerenciador de exibição foi feita com sucesso</translation>
+        <translation>O gerenciador de exibição foi alterado com sucesso</translation>
     </message>
     <message>
         <source>Display manager switch successful, changes will take effect after a restart.</source>
-        <translation>A troca do gerenciador de exibição foi feita com sucesso; as alterações entrarão em vigor após a reinicialização.</translation>
+        <translation>As alterações só terão efeito após a reinicialização.</translation>
     </message>
     <message>
         <source>Restart Now</source>
