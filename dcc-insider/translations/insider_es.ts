@@ -11,11 +11,11 @@
     </message>
     <message>
         <source>Restart Now</source>
-        <translation>Reinicar ahora</translation>
+        <translation>Reiniciar ahora</translation>
     </message>
     <message>
         <source>Restart Later</source>
-        <translation>Reiniciar más tarde.</translation>
+        <translation>Más tarde</translation>
     </message>
 </context>
 <context>
