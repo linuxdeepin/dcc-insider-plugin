@@ -29,7 +29,7 @@
     <name>insiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation>Nuevo administrador de vetanas</translation>
+        <translation>Nuevo administrador de pantalla</translation>
     </message>
     <message>
         <source>New Input Method</source>
