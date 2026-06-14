@@ -22,7 +22,7 @@
     <name>insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation>Vista previa de la tecnología</translation>
+        <translation>Funciones experimentales</translation>
     </message>
 </context>
 <context>
