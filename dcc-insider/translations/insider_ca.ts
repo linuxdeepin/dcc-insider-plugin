@@ -19,14 +19,14 @@
     </message>
 </context>
 <context>
-    <name>insider</name>
+    <name>Insider</name>
     <message>
         <source>Technology Preview</source>
         <translation>Vista prèvia de la tecnologia</translation>
     </message>
 </context>
 <context>
-    <name>insiderMain</name>
+    <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
         <translation>Gestor de pantalla nou</translation>

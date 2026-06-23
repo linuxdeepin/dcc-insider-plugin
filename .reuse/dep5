@@ -32,3 +32,8 @@ License: CC0-1.0
 Files: *.svg *.png *.dci *.gif
 Copyright: UnionTech Software Technology Co., Ltd.
 License: CC0-1.0
+
+# policy
+Files: *.policy *.policy.in
+Copyright: UnionTech Software Technology Co., Ltd.
+License: CC0-1.0

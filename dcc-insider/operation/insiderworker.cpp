@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2024 UnionTech Software Technology Co., Ltd.
+// SPDX-FileCopyrightText: 2024 - 2026 UnionTech Software Technology Co., Ltd.
 //
 // SPDX-License-Identifier: GPL-3.0-or-later
 #include "insiderworker.h"
@@ -68,24 +68,32 @@ void InsiderWorker::onDisplayManagerFinished()
 
 void InsiderWorker::switchDisplayManager(bool isNew)
 {
+    constexpr int pkexecTimeout = 30000;
     QProcess process;
     process.setProgram("/usr/bin/pkexec");
-    if (isNew) {
-        // systemd service named ddm, not treeland
-        process.setArguments(QStringList() << "systemctl"
-                                           << "enable"
-                                           << "ddm.service"
-                                           << "-f");
-    } else {
-        process.setArguments(QStringList() << "systemctl"
-                                           << "enable"
-                                           << "lightdm.service"
-                                           << "-f");
+    process.setArguments(QStringList() << "/usr/libexec/dcc-insider-plugin/dcc-insider-dm-switch"
+                                       << (isNew ? "ddm" : "lightdm"));
+    process.start();
+    if (!process.waitForFinished(pkexecTimeout)) {
+        process.kill();
+        process.waitForFinished();
+        qWarning() << "switchDisplayManager failed to finish:" << process.errorString();
+        return;
     }
 
-    process.start();
-    process.waitForFinished();
-    qDebug() << "switchDisplayManager: " << process.readAll();
+    const QByteArray standardOutput = process.readAllStandardOutput();
+    const QByteArray standardError = process.readAllStandardError();
+
+    if (process.exitStatus() != QProcess::NormalExit || process.exitCode() != 0) {
+        qWarning() << "switchDisplayManager failed:"
+                   << "exitStatus=" << process.exitStatus()
+                   << "exitCode=" << process.exitCode()
+                   << "stdout=" << standardOutput
+                   << "stderr=" << standardError;
+        return;
+    }
+
+    qDebug() << "switchDisplayManager succeeded:" << standardOutput;
 }
 
 void InsiderWorker::notifyDisplayManagerChanged()

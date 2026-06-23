@@ -19,14 +19,14 @@
     </message>
 </context>
 <context>
-    <name>insider</name>
+    <name>Insider</name>
     <message>
         <source>Technology Preview</source>
         <translation>Paraparje Teknologjie</translation>
     </message>
 </context>
 <context>
-    <name>insiderMain</name>
+    <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
         <translation>Përgjegjës i Ri Ekranesh</translation>
