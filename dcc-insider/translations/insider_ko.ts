@@ -21,14 +21,14 @@
     </message>
 </context>
 <context>
-    <name>insider</name>
+    <name>Insider</name>
     <message>
         <source>Technology Preview</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>insiderMain</name>
+    <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
         <translation type="unfinished"></translation>
