@@ -22,38 +22,38 @@
     <name>Insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation>Funciones experimentales</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation>Nuevo administrador de pantalla</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>New Input Method</source>
-        <translation>Nuevo método de entrada</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation>Método de entrada estable</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation>Vista previa de la tecnología Método de entrada (deepin-im)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation>Administrador de pantalla  estable (LightDM)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation>Vista previa de la tecnología Administrador de visualización/Administrador de ventanas (DDM/Treeland)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation>Al experimentar el entorno de Treeland en una máquina virtual, asegúrese de que la aceleración 3D esté habilitada. Tenga en cuenta que el entorno actual de Treeland no permite ejecutar aplicaciones Wine.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
