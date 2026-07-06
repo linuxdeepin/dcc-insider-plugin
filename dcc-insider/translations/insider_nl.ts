@@ -22,38 +22,38 @@
     <name>Insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation>Vroegtijdig vrijgegeven versie</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation>Nieuwe beeldbeheerder</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>New Input Method</source>
-        <translation>Nieuwe invoermethode</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation>Huidige (stabiele) invoermethode</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation>Invoermethode van vroegtijdig vrijgegeven versie (deepin-im)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation>Huidige beeldbeheerder (LightDM)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation>Beeldbeheerder van vroegtijdig vrijgegeven versie (DDM/Treeland)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation>Als je Treeland in een virtuele machine gebruikt, zorg er dan voor dat 3D-versnelling is ingeschakeld. Let op: momenteel is er geen ondersteuning voor Wine-programma&apos;s.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
