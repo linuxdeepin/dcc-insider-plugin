@@ -22,38 +22,38 @@
     <name>Insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation>Тестування технологій</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation>Новий засіб керування дисплеєм</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>New Input Method</source>
-        <translation>Новий спосіб введення</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation>Поточний стабільний спосіб введення</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation>Тестування технологій способу введення (deepin-im)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation>Поточний стабільний засіб керування дисплеєм (LightDM)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation>Тестування технологій засобу керування дисплеєм і вікнами (DDM/Treeland)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation>Якщо тестуєте середовище Treeland у віртуальній машині, переконайтеся, що увімкнено апаратне прискорення обробки просторової графіки. Будь ласка, зауважте, що у поточній реалізації середовища Treeland не передбачено підтримки запуску програм Wine.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
