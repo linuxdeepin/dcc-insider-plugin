@@ -29,7 +29,7 @@
     <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation type="unfinished"/>
+        <translation>Novo gerenciador de exibição</translation>
     </message>
     <message>
         <source>New Input Method</source>
@@ -45,11 +45,11 @@
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation type="unfinished"/>
+        <translation>Gerenciador de exibição (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation type="unfinished"/>
+        <translation>Gerenciador de exibição/Gerenciador de janelas (DDM/Treeland) - Experimental</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
