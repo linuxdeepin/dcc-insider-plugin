@@ -3,11 +3,11 @@
     <name>dde::insider::InsiderWorker</name>
     <message>
         <source>Display manager switch successful</source>
-        <translation>A troca do gerenciador de exibição foi feita com sucesso</translation>
+        <translation>O gerenciador de exibição foi alterado com sucesso</translation>
     </message>
     <message>
         <source>Display manager switch successful, changes will take effect after a restart.</source>
-        <translation>A troca do gerenciador de exibição foi feita com sucesso; as alterações entrarão em vigor após a reinicialização.</translation>
+        <translation>As alterações só terão efeito após a reinicialização.</translation>
     </message>
     <message>
         <source>Restart Now</source>
@@ -45,15 +45,15 @@
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation>Gerenciador de exibição estável (LightDM)</translation>
+        <translation>Gerenciador de exibição (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation>Gerenciador de exibição / Gerenciador de janelas experimental (DDM / Treeland)</translation>
+        <translation>Gerenciador de exibição/Gerenciador de janelas (DDM/Treeland) - Experimental</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation>Ao experimentar o ambiente Treeland em uma máquina virtual, certifique-se de que a aceleração 3D esteja habilitada. Observe que o ambiente Treeland atual não suporta a execução de aplicativos Wine.</translation>
+        <translation>Ao usar o Treeland em uma máquina virtual, certifique-se de que a aceleração 3D esteja ativa. Observe que atualmente o Treeland não oferece suporte para a execução de aplicativos Wine.</translation>
     </message>
 </context>
 </TS>

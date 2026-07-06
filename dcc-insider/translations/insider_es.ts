@@ -11,18 +11,18 @@
     </message>
     <message>
         <source>Restart Now</source>
-        <translation>Reinicar ahora</translation>
+        <translation>Reiniciar ahora</translation>
     </message>
     <message>
         <source>Restart Later</source>
-        <translation>Reiniciar más tarde.</translation>
+        <translation>Más tarde</translation>
     </message>
 </context>
 <context>
     <name>insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation>Vista previa de la tecnología</translation>
+        <translation>Funciones experimentales</translation>
     </message>
 </context>
 <context>
