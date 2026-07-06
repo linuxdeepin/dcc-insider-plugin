@@ -22,34 +22,34 @@
     <name>Insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation>ການສະແດງເຕັກໂນໂລຢີ</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation>ຕົວຈັດການສະແດງຜົນໃໝ່</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>New Input Method</source>
-        <translation>ວິທີການປ້ອນຂໍ້ມູນໃໝ່</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation>ວິທີການປ້ອນຂໍ້ມູນທີ່ເສົຖຽນໃນປະຈຸບັນ</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation>ວິທີການປ້ອນຂໍ້ມູນສະແດງເຕັກໂນໂລຢີ (deepin-im)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation>ຕົວຈັດການສະແດງຜົນທີ່ເສົຖຽນໃນປະຈຸບັນ (LightDM)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation>ຕົວຈັດການສະແດງຜົນ/ຕົວຈັດການໜ້າຕ່າງສະແດງເຕັກໂນໂລຢີ (DDM/Treeland)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
