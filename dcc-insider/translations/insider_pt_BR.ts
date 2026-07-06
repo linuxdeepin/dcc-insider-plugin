@@ -37,11 +37,11 @@
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation type="unfinished"/>
+        <translation>Método de entrada estável</translation>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation type="unfinished"/>
+        <translation>Método de entrada experimental (deepin-im)</translation>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
