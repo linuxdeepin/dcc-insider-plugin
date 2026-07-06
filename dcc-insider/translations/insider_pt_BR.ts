@@ -22,38 +22,38 @@
     <name>Insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation>Recursos experimentais</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation>Novo Gerenciador de Exibição</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>New Input Method</source>
-        <translation>Novo método de entrada</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation>Método de entrada atualmente estável</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation>Método de entrada experimental (deepin-im)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation>Gerenciador de exibição (LightDM)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation>Gerenciador de exibição/Gerenciador de janelas (DDM/Treeland) - Experimental</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation>Ao usar o Treeland em uma máquina virtual, certifique-se de que a aceleração 3D esteja ativa. Observe que atualmente o Treeland não oferece suporte para a execução de aplicativos Wine.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
