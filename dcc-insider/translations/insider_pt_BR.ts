@@ -22,7 +22,7 @@
     <name>Insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation type="unfinished"/>
+        <translation>Recursos experimentais</translation>
     </message>
 </context>
 <context>
