@@ -33,7 +33,7 @@
     </message>
     <message>
         <source>New Input Method</source>
-        <translation type="unfinished"/>
+        <translation>Novo método de entrada</translation>
     </message>
     <message>
         <source>Currently stable Input Method</source>
