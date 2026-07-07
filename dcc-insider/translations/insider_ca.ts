@@ -22,38 +22,38 @@
     <name>Insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation type="unfinished"/>
+        <translation>Vista prèvia de la tecnologia</translation>
     </message>
 </context>
 <context>
     <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation type="unfinished"/>
+        <translation>Gestor de pantalla nou</translation>
     </message>
     <message>
         <source>New Input Method</source>
-        <translation type="unfinished"/>
+        <translation>Mètode d&apos;entrada nou</translation>
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation type="unfinished"/>
+        <translation>Mètode d&apos;entrada estable actualment</translation>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation type="unfinished"/>
+        <translation>Previsualització de tecnologia del mètode d&apos;entrada (deepin-im)</translation>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation type="unfinished"/>
+        <translation>Gestor de pantalla estable actualment (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation type="unfinished"/>
+        <translation>Vista prèvia de tecnologia del gestor de pantalla / gestor de finestres (DDM/Treeland)</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation type="unfinished"/>
+        <translation>Quan experimenteu l&apos;entorn Treeland en una màquina virtual, assegureu-vos que l&apos;acceleració 3D estigui habilitada. Tingueu en compte que l&apos;entorn actual del Treeland no admet l&apos;execució d&apos;aplicacions de Wine.</translation>
     </message>
 </context>
 </TS>
