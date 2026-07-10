@@ -1,3 +1,14 @@
+dcc-insider-plugin (0.1.18) unstable; urgency=medium
+
+  * feat(dm-switch): add safe dm switch helper
+  * i18n: Updates for project Deepin Desktop Environment (#50)
+  * chore: Sync by
+    https://github.com/linuxdeepin/.github/commit/88706fa723e3771211cb07
+    81d3d97fd4a6cd2a68
+  * i18n: Translate insider.ts in sq (#49)
+
+ -- zhangkun <zhangkun2@uniontech.com>  Fri, 10 Jul 2026 14:15:34 +0800
+
 dcc-insider-plugin (0.1.17) unstable; urgency=medium
 
   * i18n: Updates for project Deepin Desktop Environment (#46)
