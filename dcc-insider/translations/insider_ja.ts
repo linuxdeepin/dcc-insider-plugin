@@ -22,38 +22,38 @@
     <name>Insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation type="unfinished"/>
+        <translation>技術プレビュー</translation>
     </message>
 </context>
 <context>
     <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation type="unfinished"/>
+        <translation>新しいディスプレイマネージャー</translation>
     </message>
     <message>
         <source>New Input Method</source>
-        <translation type="unfinished"/>
+        <translation>新しい入力メソッド</translation>
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation type="unfinished"/>
+        <translation>安定版の入力メソッド</translation>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation type="unfinished"/>
+        <translation>プレビュー版の入力メソッド (deepin-im)</translation>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation type="unfinished"/>
+        <translation>安定版のディスプレイマネージャー (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation type="unfinished"/>
+        <translation>プレビュー版のディスプレイ/ウィンドウマネージャー (DDM/Treeland)</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation type="unfinished"/>
+        <translation>Treeland環境を仮想マシンで使用する場合、3Dアクセラレーションが有効になっていることをご確認ください。現在Treeland環境はWineアプリケーションの実行に対応していません。ご注意ください。</translation>
     </message>
 </context>
 </TS>
