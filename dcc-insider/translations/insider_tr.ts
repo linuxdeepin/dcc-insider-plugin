@@ -22,38 +22,38 @@
     <name>Insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation type="unfinished"/>
+        <translation>Teknoloji Önizlemesi</translation>
     </message>
 </context>
 <context>
     <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation type="unfinished"/>
+        <translation>Yeni Ekran Yöneticisi</translation>
     </message>
     <message>
         <source>New Input Method</source>
-        <translation type="unfinished"/>
+        <translation>Yeni Giriş Yöntemi</translation>
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation type="unfinished"/>
+        <translation>Şu anda kararlı Giriş Yöntemi</translation>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation type="unfinished"/>
+        <translation>Teknoloji önizlemesi Giriş Yöntemi (deepin-im)</translation>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation type="unfinished"/>
+        <translation>Geçerli kararlı Görüntü Yöneticisi (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation type="unfinished"/>
+        <translation>Teknoloji önizlemesi Ekran Yöneticisi/Pencere Yöneticisi (DDM/Treeland)</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation type="unfinished"/>
+        <translation>Treeland ortamını sanal makinede deneyimlerken 3D hızlandırmanın etkin olduğundan emin olun. Lütfen mevcut Treeland ortamının Wine uygulamalarını çalıştırmayı desteklemediğini unutmayın.</translation>
     </message>
 </context>
 </TS>
