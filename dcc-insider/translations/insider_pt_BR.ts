@@ -29,7 +29,7 @@
     <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation>Novo Gerenciador de Exibição</translation>
+        <translation>Novo gerenciador de exibição</translation>
     </message>
     <message>
         <source>New Input Method</source>
@@ -37,7 +37,7 @@
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation>Método de entrada atualmente estável</translation>
+        <translation>Método de entrada estável</translation>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
@@ -53,7 +53,7 @@
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation>Ao usar o Treeland em uma máquina virtual, certifique-se de que a aceleração 3D esteja ativa. Observe que atualmente o Treeland não oferece suporte para a execução de aplicativos Wine.</translation>
+        <translation>Ao utilizar o ambiente Treeland em uma máquina virtual, certifique-se de que a aceleração 3D esteja habilitada. Observe que, atualmente, o ambiente Treeland não oferece suporte à execução de aplicativos Wine.</translation>
     </message>
 </context>
 </TS>

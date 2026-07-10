@@ -37,7 +37,7 @@
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation>Mètode d&apos;entrada actualment estable</translation>
+        <translation>Mètode d&apos;entrada estable actualment</translation>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
@@ -45,7 +45,7 @@
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation>Gestor de pantalla actualment estable (LightDM)</translation>
+        <translation>Gestor de pantalla estable actualment (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
