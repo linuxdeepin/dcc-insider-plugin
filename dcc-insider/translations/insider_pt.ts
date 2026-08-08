@@ -7,37 +7,37 @@
     </message>
     <message>
         <source>Display manager switch successful, changes will take effect after a restart.</source>
-        <translation type="unfinished"/>
+        <translation>Troca de Gestor de Exibição bem sucedida, as alterações terão efeito depois de um reinício.</translation>
     </message>
     <message>
         <source>Restart Now</source>
-        <translation type="unfinished"/>
+        <translation>Reiniciar Agora</translation>
     </message>
     <message>
         <source>Restart Later</source>
-        <translation type="unfinished"/>
+        <translation>Reiniciar Mais Tarde</translation>
     </message>
 </context>
 <context>
     <name>Insider</name>
     <message>
         <source>Technology Preview</source>
-        <translation type="unfinished"/>
+        <translation>Pré-visualização da Tecnologia</translation>
     </message>
 </context>
 <context>
     <name>InsiderMain</name>
     <message>
         <source>New Display Manager</source>
-        <translation type="unfinished"/>
+        <translation>Novo Gestor de Exibição</translation>
     </message>
     <message>
         <source>New Input Method</source>
-        <translation type="unfinished"/>
+        <translation>Novo Método de Introdução</translation>
     </message>
     <message>
         <source>Currently stable Input Method</source>
-        <translation type="unfinished"/>
+        <translation>Método de Introdução atualmente estável</translation>
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
