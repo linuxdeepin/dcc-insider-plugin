@@ -41,19 +41,19 @@
     </message>
     <message>
         <source>Technology preview Input Method (deepin-im)</source>
-        <translation type="unfinished"/>
+        <translation>Pré-visualização da Tecnologia Método de Introdução (deepin-im)</translation>
     </message>
     <message>
         <source>Currently stable Display Manager (LightDM)</source>
-        <translation type="unfinished"/>
+        <translation>Gestor de Exibição atualmente estável (LightDM)</translation>
     </message>
     <message>
         <source>Technology preview Display Manager/Window Manager (DDM/Treeland)</source>
-        <translation type="unfinished"/>
+        <translation>Pré-visualização da tecnologia Gestor de Exibição/Gestor de Janelas (DDM/Treeland)</translation>
     </message>
     <message>
         <source>When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications.</source>
-        <translation type="unfinished"/>
+        <translation>Quando experimentar o ambiente Treeland numa máquina virtual, certifique-se que tem a aceleração 2D ativada. Por favor note que o ambiente Treeland atual não suporta execução de aplicações Wine.</translation>
     </message>
 </context>
 </TS>
