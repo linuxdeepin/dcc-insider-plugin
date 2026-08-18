@@ -1,3 +1,9 @@
+dcc-insider-plugin (0.1.19) unstable; urgency=medium
+
+  * i18n: Updates for project Deepin Desktop Environment (#54)
+
+ -- zhangkun <zhangkun2@uniontech.com>  Tue, 18 Aug 2026 13:52:52 +0800
+
 dcc-insider-plugin (0.1.18) unstable; urgency=medium
 
   * feat(dm-switch): add safe dm switch helper
