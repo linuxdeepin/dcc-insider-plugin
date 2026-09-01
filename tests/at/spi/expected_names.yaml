@@ -1,0 +1,36 @@
+version: '1.0'
+widgets: []
+qml_elements:
+  - element_type: DccCheckIcon
+    id: ''
+    # DDE-198 locator anchor: objectName (QML) for test automation.
+    # dccObj.name is a runtime binding; each ViewItem instance resolves it to
+    # its hardcoded, unique, non-translated `name` (see `instances` below).
+    accessible_id: dccObj.name
+    accessible_role: Accessible.CheckBox
+    source_file: dcc-insider/qml/ViewItem.qml
+    parent_type: ViewItem
+    line: 10
+    instances:
+      - name: lightdm
+        source_file: dcc-insider/qml/InsiderMain.qml
+        line: 19
+        parent: selectDisplayManager
+        display_name: "Currently stable Display Manager (LightDM)"
+      - name: treeland
+        source_file: dcc-insider/qml/InsiderMain.qml
+        line: 25
+        parent: selectDisplayManager
+        display_name: "Technology preview Display Manager/Window Manager (DDM/Treeland)"
+        description: "When experiencing the Treeland environment in a virtual machine, ensure 3D acceleration is enabled. Please note that the current Treeland environment does not support running Wine applications."
+      - name: fcitx5
+        source_file: dcc-insider/qml/InsiderMain.qml
+        line: 47
+        parent: selectInputMethod
+        display_name: "Currently stable Input Method"
+      - name: deepin-im
+        source_file: dcc-insider/qml/InsiderMain.qml
+        line: 53
+        parent: selectInputMethod
+        display_name: "Technology preview Input Method (deepin-im)"
+transient_elements: []
