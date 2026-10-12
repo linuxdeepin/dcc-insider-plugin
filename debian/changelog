@@ -1,3 +1,9 @@
+dcc-insider-plugin (0.1.22) unstable; urgency=medium
+
+  * i18n: Translate insider.ts in pt_BR (#59)
+
+ -- zhangkun <zhangkun2@uniontech.com>  Mon, 12 Oct 2026 18:27:14 +0800
+
 dcc-insider-plugin (0.1.21) unstable; urgency=medium
 
   * feat(at-spi): add objectName locator for ViewItem check icon
