@@ -1,3 +1,9 @@
+dcc-insider-plugin (0.1.23) unstable; urgency=medium
+
+  * i18n: Updates for project Deepin Desktop Environment (#62)
+
+ -- zhangkun <zhangkun2@uniontech.com>  Thu, 15 Oct 2026 21:34:42 +0800
+
 dcc-insider-plugin (0.1.22) unstable; urgency=medium
 
   * i18n: Translate insider.ts in pt_BR (#59)
