@@ -9,6 +9,7 @@ DccObject {
     onActive: dccData.setCurrentItem(name)
     page: DccCheckIcon {
         visible: dccData.currentItems.includes(dccObj.name)
+        accessibleId: dccObj.name
         objectName: dccObj.name
         Accessible.role: Accessible.CheckBox
     }
